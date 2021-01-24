@@ -11,12 +11,18 @@ public class Main
     frame1.setSize(500,500);
     frame1.setVisible(true);
 
-    JPanel panel1 = new JPanel(new GridLayout(1,1, 20, 20));
+    JPanel panel1 = new JPanel(new GridLayout(2, 2, 20, 20));
+    JTextField textfield1 = new JTextField(10);
 
+    JTextField textfield2 = new JTextField(10);
     //------Button1-------//
     JButton button1 = new JButton("Button1"); 
     //------Button2-------//
     JButton button2 = new JButton("Button2");
+
+    
+
+    //JTextField textfield2 = new JTextField(10);
     //--------Panel 2--------//
     JPanel panel2 = new JPanel(new BorderLayout(10, 10));
     //------Image1-------//
@@ -25,8 +31,10 @@ public class Main
 
     panel1.add(button1);
     panel1.add(button2);
+    panel1.add(textfield1);
+    panel1.add(textfield2);
     panel2.add(mailPic);
-    
+
     frame1.getContentPane().add(BorderLayout.NORTH, panel1);
     frame1.getContentPane().add(BorderLayout.SOUTH, panel2);
   }// end of main method
