@@ -16,9 +16,27 @@ public class Main
 
     JTextField textfield2 = new JTextField(10);
     //------Button1-------//
-    JButton button1 = new JButton("Button1"); 
+    JButton button1 = new JButton("P1 Random Phrase");
+    button1.addActionListener(new ActionListener()
+      {
+          public void actionPerformed (ActionEvent e)
+          {
+            String[] phrases = {"Counting ducks", "You counted to", "Look at you count", "Nice one there", "Keep Going!"};
+            System.out.println("P1 Says - " + phrases[(int)(Math.random() * phrases.length)]);
+            
+          }//end the block of what the button will do
+      }); //end the ActionListener 
     //------Button2-------//
-    JButton button2 = new JButton("Button2");
+    JButton button2 = new JButton("P2 Random Phrase");
+    button2.addActionListener(new ActionListener()
+      {
+          public void actionPerformed (ActionEvent e)
+          {
+            String[] phrases = {"Counting ducks", "You counted to", "Look at you count", "Nice one there", "Keep Going!"};
+            System.out.println("P2 Says - " + phrases[(int)(Math.random() * phrases.length)]);
+            
+          }//end the block of what the button will do
+      }); //end the ActionListener 
     //------Button3-------//
     JButton button3 = new JButton("Button3");
     //------Button4-------//
