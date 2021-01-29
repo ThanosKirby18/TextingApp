@@ -38,18 +38,25 @@ public class Main
           }//end the block of what the button will do
       }); //end the ActionListener 
     //------Button3-------//
-    JButton button3 = new JButton("Button3");
+    JButton button3 = new JButton("P1 Send Message");
     button3.addActionListener(new ActionListener()
       {
           public void actionPerformed (ActionEvent e)
           {
             System.out.println("P1: "+  textfield1.getText());
              textfield1.setText("");
-            
           }//end the block of what the button will do
       }); //end the ActionListener 
     //------Button4-------//
-    JButton button4 = new JButton("Button4");
+    JButton button4 = new JButton("P2 Send Message");
+    button4.addActionListener(new ActionListener()
+      {
+          public void actionPerformed (ActionEvent e)
+          {
+            System.out.println("P2: "+  textfield2.getText());
+             textfield2.setText("");
+          }//end the block of what the button will do
+      }); //end the ActionListener
     //JTextField textfield2 = new JTextField(10);
     //--------Panel 2--------//
     JPanel panel2 = new JPanel(new BorderLayout(10, 10));
