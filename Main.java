@@ -39,6 +39,15 @@ public class Main
       }); //end the ActionListener 
     //------Button3-------//
     JButton button3 = new JButton("Button3");
+    button3.addActionListener(new ActionListener()
+      {
+          public void actionPerformed (ActionEvent e)
+          {
+            System.out.println("P1: "+  textfield1.getText());
+             textfield1.setText("");
+            
+          }//end the block of what the button will do
+      }); //end the ActionListener 
     //------Button4-------//
     JButton button4 = new JButton("Button4");
     //JTextField textfield2 = new JTextField(10);
